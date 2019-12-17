@@ -9,7 +9,7 @@ function Counter() {
   return (
     <div>
       <label> Plz input a number</label>
-      <input type="text" onChange = {(e) => setCount(e.target.value)} />
+      <input type="text" onChange = {(e) => setCount(parseInt(e.target.value))} />
       <p>Counter is at : {count} </p>
       <button onClick={() => setCount(count + 1)}>
         +1
